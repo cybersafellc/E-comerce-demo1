@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-comerce | Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark p-0 d-none d-lg-block" data-bs-theme="dark">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <a class="nav-link link-hover d-flex gap-2 align-items-center justify-content-center fs-6" href="#"><span class="material-symbols-outlined fs-6 mt-1"> mail </span>info@company.com</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover d-flex gap-2 align-items-center justify-content-center fs-6" href="#"><span class="material-symbols-outlined fs-6 mt-1"> call </span>info@company.com</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link link-hover d-flex gap-2 align-items-center justify-content-center fs-6" href="#"><i class="bx bxl-facebook-square fs-6"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover d-flex gap-2 align-items-center justify-content-center fs-6" href="#"><i class="bx bxl-instagram fs-6"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover d-flex gap-2 align-items-center justify-content-center fs-6" href="#"><i class="bx bxl-twitter fs-6"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-hover d-flex gap-2 align-items-center justify-content-center fs-6" href="#"><i class="bx bxl-linkedin-square fs-6"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- nabar 2 start -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="/index.html"><span class="display-5 fw-bold text-success">Saw</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-25 justify-content-start d-none d-lg-block">
+            <li class="nav-item mb-3">
+              <a class="navbar-brand" href="/index.html"><span class="display-5 fw-bold text-success">Saw</span></a>
+            </li>
+          </ul>
+          <ul id="icons-nav" class="navbar-nav mx-lg-auto me-auto mb-3 mb-lg-0 w-50 justify-content-evenly">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase b-b" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase b-b" aria-current="page" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase b-b" aria-current="page" href="/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase b-b" aria-current="page" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul id="icons-nav" class="navbar-nav ms-lg-auto mx-auto mb-2 mb-lg-0 w-25 justify-content-lg-end d-flex flex-row justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bx bx-search-alt-2 fs-3"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bx bxs-cart fs-3"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bx bxs-user fs-3"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar 2 end -->
+
+    <!-- section list product start -->
+    <section id="listproduct" class="py-5 px-3">
+      <div class="container">
+        <div class="container-fluid m-0 p-0">
+          <div class="row m-0 p-0">
+            <div class="col-lg-3">
+              <p class="display-6 fw-light">Categories</p>
+
+              <div class="btn-group w-100 d-flex flex-column">
+                <button id="burron" class="btn btn-secondary fw-light btn-lg d-flex justify-content-between align-items-center px-0 fs-3 text-dark bg-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gender<i id="categories-hover" class="bx bx-chevron-down fs-3 bg-dark text-white rounded-circle"></i>
+                </button>
+                <ul class="dropdown-menus">
+                  <li><a class="dropdown-item" href="#">Man</a></li>
+                  <li><a class="dropdown-item" href="#">Women</a></li>
+                </ul>
+              </div>
+              <div class="btn-group w-100 d-flex flex-column">
+                <button id="burron2" class="btn btn-secondary fw-light btn-lg d-flex justify-content-between align-items-center px-0 fs-3 text-dark bg-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sale<i id="categories-hover" class="bx bx-chevron-down fs-3 bg-dark text-white rounded-circle"></i>
+                </button>
+                <ul class="dropdown-menus2">
+                  <li><a class="dropdown-item" href="#">Sport</a></li>
+                  <li><a class="dropdown-item" href="#">Luxury</a></li>
+                </ul>
+              </div>
+              <div class="btn-group w-100 d-flex flex-column">
+                <button id="burron3" class="btn btn-secondary fw-light btn-lg d-flex justify-content-between align-items-center px-0 fs-3 text-dark bg-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product<i id="categories-hover" class="bx bx-chevron-down fs-3 bg-dark text-white rounded-circle"></i>
+                </button>
+                <ul class="dropdown-menus3">
+                  <li><a class="dropdown-item" href="#">Bag</a></li>
+                  <li><a class="dropdown-item" href="#">Sweather</a></li>
+                  <li><a class="dropdown-item" href="#">Sunglass</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="container">
+                <div class="row mb-4">
+                  <div id="selection" class="col-md-6 d-flex gap-3 p-0 mt-4 mt-lg-0 mb-2 p-0 p-md-2">
+                    <a href="" class="fs-4 text-decoration-none text-dark fw-light">All</a>
+                    <a href="" class="fs-4 text-decoration-none text-dark fw-light">Men's</a>
+                    <a href="" class="fs-4 text-decoration-none text-dark fw-light">Women's</a>
+                  </div>
+                  <div class="col-md-6 p-0 mt-4 mt-lg-0 p-0 p-md-2">
+                    <div class="container-fluid p-0">
+                      <select class="form-select fs-6 fw-light" aria-label="Default select example">
+                        <option selected value="1">Featured</option>
+                        <option value="2">A to Z</option>
+                        <option value="3">Item</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-md-3">
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_01.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_02.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0 d-flex justify-content-md-end justify-content-center">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_03.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-md-3">
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_04.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_05.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0 d-flex justify-content-md-end justify-content-center">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_06.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-md-3">
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_07.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_08.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 p-0 p-md-2 m-0 py-3 py-md-0">
+                    <div class="container-fluid p-0 d-flex justify-content-md-end justify-content-center">
+                      <div class="card img-thumbnail shadow">
+                        <div class="nani">
+                          <div class="asbolutin rounded-1">
+                            <a href=""> <i class="bx bxs-bookmark-star"></i></a>
+                            <a href=""> <i class="bx bx-low-vision"></i></a>
+                            <a href=""> <i class="bx bx-cart-add"></i></a>
+                          </div>
+                          <img src="assets/images/shop_09.jpg" class="card-img-top" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex flex-column mb-2">
+                            <div class="card-title fs-4 fw-light m-0 p-0">Oupidatat non</div>
+                            <div class="card-title fs-4 fw-light m-0 p-0">M/L/X/XL</div>
+                          </div>
+                          <div class="star d-flex justify-content-center">
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-warning"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                            <i class="bx bxs-star fs-5 text-secondary"></i>
+                          </div>
+                          <div class="fs-5 fw-light d-flex justify-content-center">$250.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section list product end -->
+
+    <!-- section our barnd start -->
+    <section id="our-service-end" class="py-3 bg-private">
+      <div class="container p-5">
+        <p class="display-4 fw-light text-center">Our Brand</p>
+        <p id="text-our-service" class="fs-5 fw-light text-center mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.</p>
+        <div class="container-fluid mt-5 mb-5 py-5">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block w-100 d-flex justify-content-center container">
+                  <div class="row d-flex justify-content-center gap-5">
+                    <img src="assets/images/brand_01.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_02.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_03.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_04.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100 d-flex justify-content-center container">
+                  <div class="row d-flex justify-content-center gap-5">
+                    <img src="assets/images/brand_01.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_02.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_03.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_04.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100 d-flex justify-content-center container">
+                  <div class="row d-flex justify-content-center gap-5">
+                    <img src="assets/images/brand_01.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_02.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_03.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                    <img src="assets/images/brand_04.png" class="col-lg-4 col-md-6 brand-logo" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section our brand end -->
+    <!-- secttion footer start-->
+    <footer>
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row gap">
+            <div class="col-md-4 mb-5 mb-md-0">
+              <span class="h1 text-success">Saw shop</span>
+              <hr class="text-secondary" />
+              <div class="d-flex flex-column gap-2">
+                <a href="" class="text-white fs-5 fw-light text-decoration-none"><i class="bx bxs-map text-white fs-5 me-2"></i>123 Consectetur at ligula 10660</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none"><i class="bx bxs-phone text-white fs-5 me-2"></i>010-020-0340</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none"><i class="bx bxs-envelope text-white fs-5 me-2"></i>info@company.com</a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+              <span class="h1 text-white fw-light">Products</span>
+              <hr class="text-secondary" />
+              <div class="d-flex flex-column gap-2">
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Luxury</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Sport Wear</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Men's Shoes</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Women's Shoes</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Popular Dress</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Gym Accessories</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Sport Shoes</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <span class="h1 text-white fw-light">Further Info</span>
+              <hr class="text-secondary" />
+              <div class="d-flex flex-column gap-2">
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Home</a>
+                <a href="/about.html" class="text-white fs-5 fw-light text-decoration-none">About Us</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">Shop Locations</a>
+                <a href="" class="text-white fs-5 fw-light text-decoration-none">FAQs</a>
+                <a href="/contact.html" class="text-white fs-5 fw-light text-decoration-none">Contact</a>
+              </div>
+            </div>
+          </div>
+          <hr class="text-secondary" />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex justify-content-lg-start justify-content-center gap-3 icon-footer">
+                <a href="" class=""><i class="bx bxl-facebook text-white fs-2 border border rounded-circle p-2"></i></a>
+                <a href=""><i class="bx bxl-instagram text-white fs-2 border border rounded-circle p-2"></i></a>
+                <a href=""><i class="bx bxl-twitter text-white fs-2 border border rounded-circle p-2"></i></a>
+                <a href=""><i class="bx bxl-linkedin text-white fs-2 border border rounded-circle p-2"></i></a>
+              </div>
+              <div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center">
+                <div class="input-group mb-3 w-75">
+                  <input type="text" class="form-control rounded-0 border border-secondary py-2" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                  <span class="input-group-text p-0 bg-dark border-0" id="basic-addon2"><button type="button" class="btn btn-success m-0 rounded-0 border border-success py-2">Subscribe</button></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- secttion footer end-->
+    <!-- copyright start -->
+    <section id="copyright-section" class="px-2 pt-4 pb-2">
+      <div class="container text-center d-flex align-items-center justify-content-center">
+        <p class="text-secondary fs-6">Copyright © 2021 Company Name | Designed by <a class="text-success" href="https://github.com/cybersafellc">Rusnanda Purnama</a></p>
+      </div>
+    </section>
+    <!-- copyright end -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
